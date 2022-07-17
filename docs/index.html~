@@ -8,15 +8,15 @@
 <title>erikbackman.github.io</title>
 <meta name="generator" content="Org Mode" />
 <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
-                     <link rel="stylesheet" href="../assets/style.css" />
+                     <link rel="stylesheet" href="./assets/style.css" />
 </head>
 <body>
 <div id="content" class="content">
 <h1 class="title">erikbackman.github.io</h1>
 
-<div id="outline-container-org00f6c41" class="outline-2">
-<h2 id="org00f6c41">Welcome!</h2>
-<div class="outline-text-2" id="text-org00f6c41">
+<div id="outline-container-org3ab33f4" class="outline-2">
+<h2 id="org3ab33f4">Welcome!</h2>
+<div class="outline-text-2" id="text-org3ab33f4">
 <p>
 This is the beginning of my blog currently found at <a href="https://www.blog.ebackman.net">blog.ebackman.net</a> being
 rewritten using only Emacs and <a href="https://orgmode.org/">Org Mode</a> without any external dependencies such
