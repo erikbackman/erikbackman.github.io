@@ -24,6 +24,7 @@
 	 :with-toc nil
 	 :section-numbers nil
 	 :time-stamp-file nil
+	 :html-preamble "<div id=bar><a href=../index.html>Index</a></div>"
 	 :html-head "<link rel=\"stylesheet\" href=\"https://cdn.simplecss.org/simple.min.css\" /> <link rel=\"stylesheet\" href=\"../assets/style.css\" /> "
 	 )
 	("assets"
