@@ -33,11 +33,11 @@
              :base-directory "./content"
              :publishing-function 'org-html-publish-to-html
              :publishing-directory "./docs"
-             :with-author nil           ;; Don't include author name
-             :with-creator t            ;; Include Emacs and Org versions in footer
-             :with-toc nil                ;; Include a table of contents
-             :section-numbers nil       ;; Don't include section numbers
-             :time-stamp-file nil)))    ;; Don't include time stamp in file
+             :with-author nil
+             :with-creator t
+             :with-toc nil  
+             :section-numbers nil
+             :time-stamp-file nil))) 
 
 (setq org-html-validation-link nil            ;; Don't show validation link
       org-html-head-include-scripts nil       ;; Use our own scripts
@@ -45,6 +45,7 @@
 
       org-html-head "<link rel=\"stylesheet\" href=\"https://cdn.simplecss.org/simple.min.css\" />
                      <link rel=\"stylesheet\" href=\"./assets/style.css\" />")
+
 
 (setq org-html-validation-link nil)
 (org-publish-all t)

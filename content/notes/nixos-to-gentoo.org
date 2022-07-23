@@ -65,5 +65,7 @@ developer.
 
 I've been back on Gentoo for a while now and so far it's been great!
 
-I still think using Nix is the sanest way to manage project dependencies and thus I will
-continue to do so on Gentoo.
+I still think using Nix is the sanest way to manage project dependencies and achieve
+reproducible builds and thus I will continue to do so on Gentoo.
+
+
