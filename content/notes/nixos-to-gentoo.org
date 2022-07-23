@@ -40,9 +40,9 @@ All the things that makes NixOS great comes at a cost which caused me to eventua
 behind.  The immutability of NixOS means that while most things works flawlessly there are a
 few instances when software will not work all that great due to NixOS not following the
 [[https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard][Filesystem Heirarchy Standard (FHS)]], although there are workarounds for this issue
-nowadays. The first time I ran into this problem was when I wanted to do some Common Lisp
+nowadays. I recently ran into this problem was when I wanted to do some Common Lisp
 development, quicklisp, the package manager used for Common Lisp does not work well on
-NixOS, browsers like [[https://nyxt.atlas.engineer/][Nyxt]] which is written in Common Lisp has been broken on NixOS for as
+NixOS. Browsers like [[https://nyxt.atlas.engineer/][Nyxt]] which is written in Common Lisp has been broken on NixOS for as
 long as I can remember.
 
 Once you get hooked on NixOS you tend to want everything to be managed by Nix which means
