@@ -1,16 +1,15 @@
 (require 'package)
 
 (setq package-user-dir (expand-file-name "./.packages"))
-(setq package-archives '(("melpa" . "https://melpa.org/packages")))
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 
 ;(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 
 (package-initialize)
-(unless package-archive-contents
-  (package-refresh-contents))
+(package-refresh-contents)
 
-
-(unless (package-installed-p 'htmlize)
+(unless
+    (package-installed-p 'htmlize)
  (package-install 'htmlize))
 
 (require 'ox-publish)

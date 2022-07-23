@@ -5,3 +5,6 @@
 This is the beginning of my blog currently found at [[https://www.blog.ebackman.net][blog.ebackman.net]] being
 rewritten using only Emacs and [[https://orgmode.org/][Org Mode]] without any external dependencies such
 as Hugo.
+
+* Posts
+** [[file:notes/nixos-to-gentoo.org][From NixOS to Gentoo]]
