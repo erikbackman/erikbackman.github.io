@@ -1,0 +1,116 @@
+/*
+ * Globals
+ */
+
+html {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* lg */
+@media screen and (min-width: 2560px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  font-family: 'Iosevka Aile Web', sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #2e3338;
+  background-color: #fafafa;
+  text-align: left;
+  display: grid;
+  grid-template-columns: lfr min(45rem,90%) lfr;
+  margin: 0;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Iosevka Aile Web', sans-serif;
+  font-weight: 600;
+  margin-top: 1.3rem;
+  margin-bottom:
+  color: #2e3338;
+}
+
+a {
+  color: #36b;
+}
+
+a:visited,
+a:hover,
+a:focus {
+  color: #36b;
+}
+
+.anchor {
+  color: #212529;
+  float: left;
+  padding-right: 4px;
+  margin-left: -23px;
+}
+
+.anchor:hover {
+  text-decoration: none;
+}
+
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor {
+  color: inherit;
+}
+
+kbd {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 200;
+}
+
+pre {
+  background-color: #212529;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+pre code {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 200;
+  font-size: 1.0rem;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/*
+ * Override Bootstrap's default container.
+ */
+.container {
+  max-width: 60rem;
+}
+
+

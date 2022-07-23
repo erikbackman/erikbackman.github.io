@@ -19,7 +19,7 @@ the compile times.
 
 Around 2018 I found NixOS as it was pretty popular in the Haskell community, a language I
 had recently fallen in love with. NixOS felt like the perfect OS, it reminded me of Gentoo in
-that it is source based and have similar control through overrides but with binary caches
+that it was source based and had similar control through overrides but with binary caches
 for when you just wanted to use the defaults.
 
 * Why NixOS is great
@@ -49,7 +49,7 @@ Once you get hooked on NixOS you tend to want everything to be managed by Nix wh
 that every time you configure some software you want to write this configuration to the nix
 store and wrap your binary to use that config or use Home-Manager, which I didn't. This
 means that every time you want to change some configuration you need to rebuild your OS,
-this may not be a problem if you rarely change stuff but I found it annoying.
+this may not be a problem if you rarely change stuff but I ended up finding it annoying.
 
 NixOS abstracting everything away can be amazing but ultimately I realized it's not what I want,
 as a long time GNU/Linux geek I didn't like that it caused me to forget how to operate a GNU/Linux system.
@@ -66,6 +66,4 @@ developer.
 I've been back on Gentoo for a while now and so far it's been great!
 
 I still think using Nix is the sanest way to manage project dependencies and achieve
-reproducible builds and thus I will continue to do so on Gentoo.
-
-
+reproducible builds and thus I will continue to use Nix for my projects on Gentoo.
