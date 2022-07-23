@@ -1,3 +1,0 @@
-(setq org-publish-cache (make-hash-table :test 'equal :weakness nil :size 100))
-(puthash ":project:" "org-site:main" org-publish-cache)
-(puthash ":cache-file:" "/home/ebn/repos/github.com/erikbackman/erikbackman.github.io/content/target/org-site:main.cache" org-publish-cache)

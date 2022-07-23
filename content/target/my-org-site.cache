@@ -1,7 +1,0 @@
-(setq org-publish-cache (make-hash-table :test 'equal :weakness nil :size 100))
-(puthash ":project:" "my-org-site" org-publish-cache)
-(puthash ":cache-file:" "/home/ebn/repos/github.com/erikbackman/erikbackman.github.io/content/target/my-org-site.cache" org-publish-cache)
-(puthash "/home/ebn/repos/github.com/erikbackman/erikbackman.github.io/content/notes/note1.org" '(:crossrefs (((other "Some" "note") . 266906230) ((headline "Some" "note") . 266906230)) :index nil) org-publish-cache)
-(puthash "X7c15b0a5644ac36162df0189401834642f13559a" '(25298 3188 855032 6000) org-publish-cache)
-(puthash "/home/ebn/repos/github.com/erikbackman/erikbackman.github.io/content/index.org" '(:crossrefs (((other "Nothing" "to" "see" ":O") . 87143818) ((headline "Nothing" "to" "see" ":O") . 87143818)) :index nil) org-publish-cache)
-(puthash "X6c25054443e134a85bb7224d20b170ae1b6e7a1b" '(25299 9248 333116 992000) org-publish-cache)
