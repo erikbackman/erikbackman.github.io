@@ -63,9 +63,9 @@ caused me to forget how to operate a GNU/Linux system.
 * Why Gentoo
 
 Gentoo has always had a special place in my heart and so when decided to pick
-up another distro, Gentoo was a no brainer and any other distro would be a
-step backwards in terms of control. I also figured that some parts of Gentoo
-would make more sense to me now that I'm a software developer.
+up another distro, Gentoo was a no brainer for me and any other distro would
+have been a step backwards in terms of control. I also figured that some
+parts of Gentoo would make more sense to me now as a software developer.
 
 * Conclusion
 
