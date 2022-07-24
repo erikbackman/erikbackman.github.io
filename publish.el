@@ -1,5 +1,10 @@
 (require 'package)
 
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
 (setq package-user-dir (expand-file-name "./.packages"))
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 
