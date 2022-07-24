@@ -102,6 +102,10 @@ pre code {
   font-size: 1.0rem;
 }
 
+code {
+    color: #54433a !important;
+}
+
 strong {
     font-weight: 700;
 }
