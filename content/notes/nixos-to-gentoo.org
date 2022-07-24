@@ -1,69 +1,77 @@
 #+title: From NixOS to Gentoo
 
 * Intro
-Before I go over my reasons for leaving NixOS for Gentoo I want to start by talking a bit about
-my history with GNU/Linux.
+Before I go over my reasons for leaving NixOS for Gentoo I want to start by
+talking a bit about my history with GNU/Linux.
 
-The first time I used GNU/Linux was back in 1996 when I installed Red Hat Linux on my
-grandfathers PC.
+The first time I used GNU/Linux was back in 1996 when I installed Red Hat
+Linux on my grandfathers PC.
 
-A year or so later when having some school internship at an IT department I was given a CD
-containing Debian by one of they guys working there. I then spent a couple of years on Debian
-before eventually finding [[https://www.gentoo.org/][Gentoo]].
+A year or so later when having some school internship at an IT department I
+was given a CD containing Debian by one of they guys working there. I then
+spent a couple of years on Debian before eventually finding [[https://www.gentoo.org/][Gentoo]].
 
-My first Gentoo install took me about 3 days, partly because I had no developer experience back
-then and so a lot of the inner workings of Gentoo was foreign to me and compiling everything
-from a stage1 install on whatever shitty hardware I had back then was pretty time consuming. I
-spent about 6 to 7 years on Gentoo before eventually switching to Arch Linux, mainly to escape
+My first Gentoo install took me about 3 days, partly because I had no
+developer experience back then and so a lot of the inner workings of Gentoo
+was foreign to me and compiling everything from a stage1 install on whatever
+shitty hardware I had back then was pretty time consuming. I spent about 6 to
+7 years on Gentoo before eventually switching to Arch Linux, mainly to escape
 the compile times.
 
-Around 2018 I found NixOS as it was pretty popular in the Haskell community, a language I
-had recently fallen in love with. NixOS felt like the perfect OS, it reminded me of Gentoo in
-that it was source based and had similar control through overrides but with binary caches
-for when you just wanted to use the defaults.
+Around 2018 I found NixOS as it was pretty popular in the Haskell community,
+a language I had recently fallen in love with. NixOS felt like the perfect
+OS, it reminded me of Gentoo in that it was source based and had similar
+control through overrides but with binary caches for when you just wanted to
+use the defaults.
 
 * Why NixOS is great
 
 NixOS does a lot of things well. Your entire system is expressed in a
-declarative fashion, this includes all your packages and services with
-their respective configurations, drivers etc.
+declarative fashion, this includes all your packages and services with their
+respective configurations, drivers etc.
 
-NixOS also gives you a near unbreakable system with atomic upgrades and rollbacks. Every time
-you rebuild your system nix will build everything to the nix-store and then run an activation
-script to symlink everything into =/run/current-system=. The beauty of this is that every time
-you rebuild it's as if you did a clean install. You can even take this one step further by
-[[https://grahamc.com/blog/erase-your-darlings][mounting your root partition on a Temporary File System (tmpfs)]].
+NixOS also gives you a near unbreakable system with atomic upgrades and
+rollbacks. Every time you rebuild your system nix will build everything to
+the nix-store and then run an activation script to symlink everything into
+=/run/current-system=. The beauty of this is that every time you rebuild it's
+as if you did a clean install. You can even take this one step further by
+[[https://grahamc.com/blog/erase-your-darlings][mounting your root partition
+on a Temporary File System (tmpfs)]].
 
 * Why I left NixOS
 
-All the things that makes NixOS great comes at a cost which caused me to eventually leave it
-behind.  The immutability of NixOS means that while most things works flawlessly there are a
-few instances when software will not work all that great due to NixOS not following the
-[[https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard][Filesystem Heirarchy Standard (FHS)]], although there are workarounds for this issue
-nowadays. I recently ran into this problem when I wanted to do some Common Lisp
-development, quicklisp, the package manager used for Common Lisp does not work well on
-NixOS. Browsers like [[https://nyxt.atlas.engineer/][Nyxt]] which is written in Common Lisp has been broken on NixOS for as
-long as I can remember.
+All the things that makes NixOS great comes at a cost which caused me to
+eventually leave it behind. The immutability of NixOS means that while most
+things works flawlessly there are a few instances when software will not work
+all that great due to NixOS not following the [[https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard][Filesystem Heirarchy Standard
+(FHS)]], although there are workarounds for this issue nowadays. I recently
+ran into this problem when I wanted to do some Common Lisp development,
+quicklisp, the package manager used for Common Lisp does not work well.
+Browsers like [[https://nyxt.atlas.engineer/][Nyxt]] which is written in Common Lisp has been broken on NixOS
+for as long as I can remember.
 
-Once you get hooked on NixOS you tend to want everything to be managed by Nix which means
-that every time you configure some software you want to write this configuration to the nix
-store and wrap your binary to use that config or use Home-Manager, which I didn't. This
-means that every time you want to change some configuration you need to rebuild your OS,
-this may not be a problem if you rarely change stuff but I ended up finding it annoying.
+Once you get hooked on NixOS you tend to want everything to be managed by Nix
+which means that every time you configure some software you want to write
+this configuration to the nix store and wrap your binary to use that config
+or use Home-Manager, which I didn't. This means that every time you want to
+change some configuration you need to rebuild your OS, this may not be a
+problem if you rarely change stuff but I ended up finding it annoying.
 
-NixOS abstracting everything away can be amazing but ultimately I realized it's not what I want,
-as a long time GNU/Linux geek I didn't like that it caused me to forget how to operate a GNU/Linux system.
+NixOS abstracting everything away can be amazing but ultimately I realized
+it's not what I want, as a long time GNU/Linux geek I didn't like that it
+caused me to forget how to operate a GNU/Linux system.
 
 * Why Gentoo
 
-Gentoo has always had a special place in my heart and so when decided to pick up another distro,
-Gentoo was a no brainer and any other distro would be a step backwards in terms of control. I
-also figured that some parts of Gentoo would make more sense to me now that I'm a software
-developer.
+Gentoo has always had a special place in my heart and so when decided to pick
+up another distro, Gentoo was a no brainer and any other distro would be a
+step backwards in terms of control. I also figured that some parts of Gentoo
+would make more sense to me now that I'm a software developer.
 
 * Conclusion
 
 I've been back on Gentoo for a while now and so far it's been great!
 
-I still think using Nix is the sanest way to manage project dependencies and achieve
-reproducible builds and thus I will continue to use Nix for my projects on Gentoo.
+I still think using Nix is the sanest way to manage project dependencies and
+achieve reproducible builds and thus I will continue to use Nix for my
+projects on Gentoo.
