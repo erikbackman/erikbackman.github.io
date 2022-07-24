@@ -35,8 +35,7 @@ rollbacks. Every time you rebuild your system nix will build everything to
 the nix-store and then run an activation script to symlink everything into
 =/run/current-system=. The beauty of this is that every time you rebuild it's
 as if you did a clean install. You can even take this one step further by
-[[https://grahamc.com/blog/erase-your-darlings][mounting your root partition
-on a Temporary File System (tmpfs)]].
+[[https://grahamc.com/blog/erase-your-darlings][mounting your root partitionon a Temporary File System (tmpfs)]].
 
 * Why I left NixOS
 
