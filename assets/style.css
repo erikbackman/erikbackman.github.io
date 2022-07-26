@@ -91,7 +91,7 @@ kbd {
 }
 
 pre {
-  background-color: #212529;
+  background-color: #f2f3f5 !important;
   padding-left: 1em;
   padding-right: 1em;
 }

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Using sticky modifier keys</title>
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" /> <link rel="stylesheet" href="../assets/style.css" /> 
+</head>
+<body>
+<div id="preamble" class="status">
+<div id=bar><a href=../index.html>Index</a></div>
+</div>
+<div id="content" class="content">
+<h1 class="title">Using sticky modifier keys</h1>
+<p>
+My workflow is pretty much a 100% keyboard driven, between Emacs and my
+Window Manager I use a lot of modifier keys. While having a keyboard like the
+Kinesis Advantage helps a great deal in reducing the gymnastics your fingers
+have to perform I decided to try and optimize my workflow further using
+sticky modifier keys and I'm very happy with the result.
+</p>
+
+<p>
+If you already have a keyboard with easily accessible modifiers, making them
+sticky is like having motions in Emacs similar to vim, except all your
+motions start with a modifier on your thumb cluster. It takes some getting
+used to but I definitely think it's worth a try if you are an Emacs user.
+</p>
+
+<p>
+Depending on your system there are multiple ways to achieve this. For
+GNU/Linux systems running Xorg there is a tool called <a href="https://github.com/stephenmontgomerysmith/xkbset">xkbset</a> which allows you
+to set various features of XKB (X keyboard extension).
+</p>
+
+<p>
+Here's how to enable sticky modifiers using <code>xkbset</code>.
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">xkbset sticky -twokey -latchlock
+xkbset exp 1 =sticky
+</pre>
+</div>
+
+<p>
+By default pressing two keys at the same time disables sticky keys, we want to disable this
+using <code>-twokey</code>.
+</p>
+
+<p>
+Pressing a modifier twice locks it, for example, pressing shift twice would basically act as caps lock.
+This could be nice but I decided to disable it using <code>-latchlock</code> argument.
+</p>
+
+<p>
+Finally <code>xkbset exp 1 =sticky</code> makes it so the sticky keys don't expire.
+</p>
+
+<p>
+I feel like this in combination with my custom repeat keymaps using the built-in
+<a href="https://karthinks.com/software/it-bears-repeating/">repeat-mode</a> has greatly improved my Emacs experience.
+</p>
+</div>
+<div id="postamble" class="status">
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.1 (<a href="https://orgmode.org">Org</a> mode 9.5.2)</p>
+</div>
+</body>
+</html>

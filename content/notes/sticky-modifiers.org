@@ -1,0 +1,33 @@
+#+title: Using sticky modifier keys
+
+My workflow is pretty much a 100% keyboard driven, between Emacs and my
+Window Manager I use a lot of modifier keys. While having a keyboard like the
+Kinesis Advantage helps a great deal in reducing the gymnastics your fingers
+have to perform I decided to try and optimize my workflow further using
+sticky modifier keys and I'm very happy with the result.
+
+If you already have a keyboard with easily accessible modifiers, making them
+sticky is like having motions in Emacs similar to vim, except all your
+motions start with a modifier on your thumb cluster. It takes some getting
+used to but I definitely think it's worth a try if you are an Emacs user.
+
+Depending on your system there are multiple ways to achieve this. For
+GNU/Linux systems running Xorg there is a tool called [[https://github.com/stephenmontgomerysmith/xkbset][xkbset]] which allows you
+to set various features of XKB (X keyboard extension).
+
+Here's how to enable sticky modifiers using =xkbset=.
+#+begin_src shell
+  xkbset sticky -twokey -latchlock
+  xkbset exp 1 =sticky
+#+end_src
+
+By default pressing two keys at the same time disables sticky keys, we want to disable this
+using ~-twokey~.
+
+Pressing a modifier twice locks it, for example, pressing shift twice would basically act as caps lock.
+This could be nice but I decided to disable it using ~-latchlock~ argument.
+
+Finally ~xkbset exp 1 =sticky~ makes it so the sticky keys don't expire.
+
+I feel like this in combination with my custom repeat keymaps using the built-in
+[[https://karthinks.com/software/it-bears-repeating/][repeat-mode]] has greatly improved my Emacs experience.
