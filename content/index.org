@@ -8,3 +8,4 @@ as Hugo.
 
 * Posts
 ** [[file:notes/nixos-to-gentoo.org][From NixOS to Gentoo]]
+** [[file:notes/sticky-modifiers.org][Using sticky modifier keys]]
