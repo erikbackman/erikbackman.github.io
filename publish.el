@@ -34,7 +34,7 @@
 	 )
 	("assets"
 	 :base-directory "./assets"
-	 :base-extension "css"
+	 :base-extension "css\\|ttf"
 	 :publishing-directory "./docs/assets"
 	 :publishing-function org-publish-attachment)
 	("index"
@@ -47,7 +47,8 @@
 	 :section-numbers nil
 	 :time-stamp-file nil
 	 :html-head "<link rel=\"stylesheet\" href=\"https://cdn.simplecss.org/simple.min.css\" /> <link rel=\"stylesheet\" href=\"./assets/style.css\" /> ")
-	 ("website" :components ("index" "notes" "assets"))))
+	("website" :components ("index" "notes" "assets"))
+	))
 
 (setq org-html-validation-link nil
       org-html-head-include-scripts nil

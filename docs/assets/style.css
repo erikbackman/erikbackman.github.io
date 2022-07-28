@@ -2,6 +2,8 @@
  * Globals
  */
 
+@font-face { font-family: Iosevka Aile Web; src: url('iosevka-aile.ttf'); } 
+
 html {
   font-size: 12px;
 }
