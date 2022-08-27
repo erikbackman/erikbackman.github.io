@@ -1,5 +1,9 @@
 #+title: Using sticky modifier keys
 
+*Update* I ended up not liking this as much as I thought, mainly because there
+is no way to undo accidental key presses. I could see myself keep using
+sticky modifiers if there was a way to define a timeout.
+
 My workflow is pretty much a 100% keyboard driven, between Emacs and my
 Window Manager I use a lot of modifier keys. While having a keyboard like the
 Kinesis Advantage helps a great deal in reducing the gymnastics your fingers
