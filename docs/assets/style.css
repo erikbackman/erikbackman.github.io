@@ -2,7 +2,7 @@
  * Globals
  */
 
-@font-face { font-family: Iosevka Aile Web; src: url('iosevka-aile.ttf'); } 
+/* @font-face { font-family: Iosevka Aile Web; src: url('iosevka-aile.ttf'); }  */
 
 html {
   font-size: 12px;
@@ -36,7 +36,7 @@ html {
 }
 
 body {
-  font-family: 'Iosevka Aile Web', sans-serif;
+  font-family: 'Gargamond', sans-serif;
   font-weight: 400;
   font-size: 1.3rem;
   color: #2e3338;
@@ -53,7 +53,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: 'Iosevka Aile Web', sans-serif;
+  font-family: 'Gargamond', sans-serif;
   font-weight: 600;
   margin-top: 1.3rem;
   margin-bottom:
