@@ -52,7 +52,7 @@ for as long as I can remember.
 Once you get hooked on NixOS you tend to want everything to be managed by Nix
 which means that every time you configure some software you want to write
 this configuration to the nix store and wrap your binary to use that config
-or use Home-Manager, which I didn't. This means that every time you want to
+or use Home-Manager (which I didn't use). This means that every time you want to
 change some configuration you need to rebuild your OS, this may not be a
 problem if you rarely change stuff but I ended up finding it annoying.
 
