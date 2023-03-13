@@ -16,9 +16,9 @@
 <div id="content" class="content">
 <h1 class="title">From NixOS to Gentoo</h1>
 
-<div id="outline-container-orge8667d3" class="outline-2">
-<h2 id="orge8667d3">Intro</h2>
-<div class="outline-text-2" id="text-orge8667d3">
+<div id="outline-container-orge34c4ef" class="outline-2">
+<h2 id="orge34c4ef">Intro</h2>
+<div class="outline-text-2" id="text-orge34c4ef">
 <p>
 Before I go over my reasons for leaving NixOS for Gentoo I want to start by
 talking a bit about my history with GNU/Linux.
@@ -26,13 +26,10 @@ talking a bit about my history with GNU/Linux.
 
 <p>
 The first time I used GNU/Linux was back in 1996 when I installed Red Hat
-Linux on my grandfathers PC.
-</p>
-
-<p>
-A year or so later when having some school internship at an IT department I
-was given a CD containing Debian by one of they guys working there. I then
-spent a couple of years on Debian before eventually finding <a href="https://www.gentoo.org/">Gentoo</a>.
+Linux on my grandfathers PC. A year or so later while having some school
+internship at an IT department I was given a CD containing Debian by one of
+the employees. I then went on to spend a couple of years on Debian before
+eventually finding <a href="https://www.gentoo.org/">Gentoo</a>.
 </p>
 
 <p>
@@ -54,9 +51,9 @@ use the defaults.
 </div>
 </div>
 
-<div id="outline-container-org586bbc9" class="outline-2">
-<h2 id="org586bbc9">Why NixOS is great</h2>
-<div class="outline-text-2" id="text-org586bbc9">
+<div id="outline-container-org18a3e95" class="outline-2">
+<h2 id="org18a3e95">Why NixOS is great</h2>
+<div class="outline-text-2" id="text-org18a3e95">
 <p>
 NixOS does a lot of things well. Your entire system is expressed in a
 declarative fashion, this includes all your packages and services with their
@@ -74,9 +71,9 @@ as if you did a clean install. You can even take this one step further by
 </div>
 </div>
 
-<div id="outline-container-org1769e53" class="outline-2">
-<h2 id="org1769e53">Why I left NixOS</h2>
-<div class="outline-text-2" id="text-org1769e53">
+<div id="outline-container-org3773692" class="outline-2">
+<h2 id="org3773692">Why I left NixOS</h2>
+<div class="outline-text-2" id="text-org3773692">
 <p>
 All the things that makes NixOS great comes at a cost which caused me to
 eventually leave it behind. The immutability of NixOS means that while most
@@ -91,38 +88,40 @@ for as long as I can remember.
 
 <p>
 Once you get hooked on NixOS you tend to want everything to be managed by Nix
-which means that every time you configure some software you want to write
-this configuration to the nix store and wrap your binary to use that config
-or use Home-Manager (which I didn't use). This means that every time you want to
-change some configuration you need to rebuild your OS, this may not be a
-problem if you rarely change stuff but I ended up finding it annoying.
+which means that every time you configure some software you need to write
+this configuration to the nix store and wrap your binary to use that config.
+This means that every time you want to change some configuration you need to
+rebuild your OS, this may not be a problem if you rarely change stuff but I
+ended up finding it annoying. An alternative approach is to use Home-Manager
+but I personally didn't feel like adding yet another layer of abstraction
+onto my system.
 </p>
 
 <p>
 NixOS abstracting everything away can be amazing but ultimately I realized
-it's not what I want, as a long time GNU/Linux geek I didn't like that it
+it's not what I want, as a long time GNU/Linux geek I didn't like how it
 caused me to forget how to operate a GNU/Linux system.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgcc989d5" class="outline-2">
-<h2 id="orgcc989d5">Why Gentoo</h2>
-<div class="outline-text-2" id="text-orgcc989d5">
+<div id="outline-container-org50548e4" class="outline-2">
+<h2 id="org50548e4">Why Gentoo</h2>
+<div class="outline-text-2" id="text-org50548e4">
 <p>
 Gentoo has always had a special place in my heart and so when decided to pick
-up another distro, Gentoo was a no brainer for me and any other distro would
+up another distro, Gentoo was a no-brainer for me as any other distro would
 have been a step backwards in terms of control. I also figured that some
 parts of Gentoo would make more sense to me now as a software developer.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org83768a7" class="outline-2">
-<h2 id="org83768a7">Conclusion</h2>
-<div class="outline-text-2" id="text-org83768a7">
+<div id="outline-container-orgcb86f74" class="outline-2">
+<h2 id="orgcb86f74">Conclusion</h2>
+<div class="outline-text-2" id="text-orgcb86f74">
 <p>
-I've been back on Gentoo for a while now and so far it's been great!
+I've been back on Gentoo for a while now and so far it has been great!
 </p>
 
 <p>
@@ -134,7 +133,7 @@ projects on Gentoo.
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 28.1 (<a href="https://orgmode.org">Org</a> mode 9.5.2)</p>
+<p class="creator"><a href="https://www.gnu.org/software/emacs/">Emacs</a> 29.0.60 (<a href="https://orgmode.org">Org</a> mode 9.6.1)</p>
 </div>
 </body>
 </html>

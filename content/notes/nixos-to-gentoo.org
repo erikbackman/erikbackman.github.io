@@ -5,11 +5,10 @@ Before I go over my reasons for leaving NixOS for Gentoo I want to start by
 talking a bit about my history with GNU/Linux.
 
 The first time I used GNU/Linux was back in 1996 when I installed Red Hat
-Linux on my grandfathers PC.
-
-A year or so later when having some school internship at an IT department I
-was given a CD containing Debian by one of they guys working there. I then
-spent a couple of years on Debian before eventually finding [[https://www.gentoo.org/][Gentoo]].
+Linux on my grandfathers PC. A year or so later while having some school
+internship at an IT department I was given a CD containing Debian by one of
+the employees. I then went on to spend a couple of years on Debian before
+eventually finding [[https://www.gentoo.org/][Gentoo]].
 
 My first Gentoo install took me about 3 days, partly because I had no
 developer experience back then and so a lot of the inner workings of Gentoo
@@ -50,26 +49,28 @@ Browsers like [[https://nyxt.atlas.engineer/][Nyxt]] which is written in Common 
 for as long as I can remember.
 
 Once you get hooked on NixOS you tend to want everything to be managed by Nix
-which means that every time you configure some software you want to write
-this configuration to the nix store and wrap your binary to use that config
-or use Home-Manager (which I didn't use). This means that every time you want to
-change some configuration you need to rebuild your OS, this may not be a
-problem if you rarely change stuff but I ended up finding it annoying.
+which means that every time you configure some software you need to write
+this configuration to the nix store and wrap your binary to use that config.
+This means that every time you want to change some configuration you need to
+rebuild your OS, this may not be a problem if you rarely change stuff but I
+ended up finding it annoying. An alternative approach is to use Home-Manager
+but I personally didn't feel like adding yet another layer of abstraction
+onto my system.
 
 NixOS abstracting everything away can be amazing but ultimately I realized
-it's not what I want, as a long time GNU/Linux geek I didn't like that it
+it's not what I want, as a long time GNU/Linux geek I didn't like how it
 caused me to forget how to operate a GNU/Linux system.
 
 * Why Gentoo
 
 Gentoo has always had a special place in my heart and so when decided to pick
-up another distro, Gentoo was a no brainer for me and any other distro would
+up another distro, Gentoo was a no-brainer for me as any other distro would
 have been a step backwards in terms of control. I also figured that some
 parts of Gentoo would make more sense to me now as a software developer.
 
 * Conclusion
 
-I've been back on Gentoo for a while now and so far it's been great!
+I've been back on Gentoo for a while now and so far it has been great!
 
 I still think using Nix is the sanest way to manage project dependencies and
 achieve reproducible builds and thus I will continue to use Nix for my
