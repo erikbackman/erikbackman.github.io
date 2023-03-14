@@ -20,7 +20,7 @@
 
 (let ((creator
        (format
-	"<a href=\"https://www.gnu.org/software/emacs/\">Generated with Emacs</a> %s and <a href=\"https://orgmode.org\">Org</a> mode %s"
+	"Generated with <a href=\"https://www.gnu.org/software/emacs/\">Emacs</a> %s and <a href=\"https://orgmode.org\">Org</a> mode %s"
 	emacs-version
 	(org-version)))
       (html-head
