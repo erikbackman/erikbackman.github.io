@@ -16,9 +16,9 @@
 <div id="content" class="content">
 <h1 class="title">From NixOS to Gentoo</h1>
 
-<div id="outline-container-org0326e3f" class="outline-2">
-<h2 id="org0326e3f">Intro</h2>
-<div class="outline-text-2" id="text-org0326e3f">
+<div id="outline-container-orgbc5170e" class="outline-2">
+<h2 id="orgbc5170e">Intro</h2>
+<div class="outline-text-2" id="text-orgbc5170e">
 <p>
 Before I go over my reasons for leaving NixOS for Gentoo I want to start by
 talking a bit about my history with GNU/Linux.
@@ -26,14 +26,14 @@ talking a bit about my history with GNU/Linux.
 
 <p>
 The first time I used GNU/Linux was back in 1996 when I installed Red Hat
-Linux on my grandfathers PC. A year or so later while having some school
-internship at an IT department I was given a CD containing Debian by one of
-the employees. I then went on to spend a couple of years on Debian before
-eventually finding <a href="https://www.gentoo.org/">Gentoo</a>.
+Linux on my grandfathers PC. A year or so later I was doing a school
+internship at a local IT department, and one of the employees handed me a
+Debian CD. I then spent a couple of years on Debian before eventually finding
+<a href="https://www.gentoo.org/">Gentoo</a>.
 </p>
 
 <p>
-My first Gentoo install took me about 3 days, partly because I had no
+My first Gentoo install took me about 2 days, partly because I had no
 developer experience back then and so a lot of the inner workings of Gentoo
 was foreign to me and compiling everything from a stage1 install on whatever
 shitty hardware I had back then was pretty time consuming. I spent about 6 to
@@ -51,9 +51,9 @@ use the defaults.
 </div>
 </div>
 
-<div id="outline-container-org4874902" class="outline-2">
-<h2 id="org4874902">Why NixOS is great</h2>
-<div class="outline-text-2" id="text-org4874902">
+<div id="outline-container-orgbfb5e44" class="outline-2">
+<h2 id="orgbfb5e44">Why NixOS is great</h2>
+<div class="outline-text-2" id="text-orgbfb5e44">
 <p>
 NixOS does a lot of things well. Your entire system is expressed in a
 declarative fashion, this includes all your packages and services with their
@@ -71,9 +71,9 @@ as if you did a clean install. You can even take this one step further by
 </div>
 </div>
 
-<div id="outline-container-org2f443e8" class="outline-2">
-<h2 id="org2f443e8">Why I left NixOS</h2>
-<div class="outline-text-2" id="text-org2f443e8">
+<div id="outline-container-org0718df4" class="outline-2">
+<h2 id="org0718df4">Why I left NixOS</h2>
+<div class="outline-text-2" id="text-org0718df4">
 <p>
 All the things that makes NixOS great comes at a cost which caused me to
 eventually leave it behind. The immutability of NixOS means that while most
@@ -105,29 +105,32 @@ caused me to forget how to operate a GNU/Linux system.
 </div>
 </div>
 
-<div id="outline-container-org399a0e5" class="outline-2">
-<h2 id="org399a0e5">Why Gentoo</h2>
-<div class="outline-text-2" id="text-org399a0e5">
+<div id="outline-container-org474e268" class="outline-2">
+<h2 id="org474e268">Why Gentoo</h2>
+<div class="outline-text-2" id="text-org474e268">
 <p>
 Gentoo has always had a special place in my heart and so when decided to pick
 up another distro, Gentoo was a no-brainer for me as any other distro would
-have been a step backwards in terms of control. I also figured that some
-parts of Gentoo would make more sense to me now as a software developer.
+have been a step backwards in terms of control.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgdfd54e5" class="outline-2">
-<h2 id="orgdfd54e5">Conclusion</h2>
-<div class="outline-text-2" id="text-orgdfd54e5">
+<div id="outline-container-org6998750" class="outline-2">
+<h2 id="org6998750">Conclusion</h2>
+<div class="outline-text-2" id="text-org6998750">
 <p>
 I've been back on Gentoo for a while now and so far it has been great!
+Portage seems to have improved a fair bit and I feel it's a bit simpler while
+maintaining the same level of control. I've also written a few packages for
+my local repo and I would say it's about as straight forward as it is to
+write nix packages. Overall I'm very happy to be back on Gentoo after all these years.
 </p>
 
 <p>
 I still think using Nix is the sanest way to manage project dependencies and
-achieve reproducible builds and thus I will continue to use Nix for my
-projects on Gentoo.
+achieve reproducible builds and I assume I will keep using it for projects on
+Gentoo.
 </p>
 </div>
 </div>

@@ -5,12 +5,12 @@ Before I go over my reasons for leaving NixOS for Gentoo I want to start by
 talking a bit about my history with GNU/Linux.
 
 The first time I used GNU/Linux was back in 1996 when I installed Red Hat
-Linux on my grandfathers PC. A year or so later while having some school
-internship at an IT department I was given a CD containing Debian by one of
-the employees. I then went on to spend a couple of years on Debian before
-eventually finding [[https://www.gentoo.org/][Gentoo]].
+Linux on my grandfathers PC. A year or so later I was doing a school
+internship at a local IT department, and one of the employees handed me a
+Debian CD. I then spent a couple of years on Debian before eventually finding
+[[https://www.gentoo.org/][Gentoo]].
 
-My first Gentoo install took me about 3 days, partly because I had no
+My first Gentoo install took me about 2 days, partly because I had no
 developer experience back then and so a lot of the inner workings of Gentoo
 was foreign to me and compiling everything from a stage1 install on whatever
 shitty hardware I had back then was pretty time consuming. I spent about 6 to
@@ -65,13 +65,16 @@ caused me to forget how to operate a GNU/Linux system.
 
 Gentoo has always had a special place in my heart and so when decided to pick
 up another distro, Gentoo was a no-brainer for me as any other distro would
-have been a step backwards in terms of control. I also figured that some
-parts of Gentoo would make more sense to me now as a software developer.
+have been a step backwards in terms of control.
 
 * Conclusion
 
 I've been back on Gentoo for a while now and so far it has been great!
+Portage seems to have improved a fair bit and I feel it's a bit simpler while
+maintaining the same level of control. I've also written a few packages for
+my local repo and I would say it's about as straight forward as it is to
+write nix packages. Overall I'm very happy to be back on Gentoo after all these years.
 
 I still think using Nix is the sanest way to manage project dependencies and
-achieve reproducible builds and thus I will continue to use Nix for my
-projects on Gentoo.
+achieve reproducible builds and I assume I will keep using it for projects on
+Gentoo.
