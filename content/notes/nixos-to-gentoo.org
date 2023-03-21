@@ -12,16 +12,13 @@ Debian CD. I then spent a couple of years on Debian before eventually finding
 
 My first Gentoo install took me about 2 days, partly because I had no
 developer experience back then and so a lot of the inner workings of Gentoo
-was foreign to me and compiling everything from a stage1 install on whatever
-shitty hardware I had back then was pretty time consuming. I spent about 6 to
-7 years on Gentoo before eventually switching to Arch Linux, mainly to escape
-the compile times.
-
-Around 2018 I found NixOS as it was pretty popular in the Haskell community,
-a language I had recently fallen in love with. NixOS felt like the perfect
-OS, it reminded me of Gentoo in that it was source based and had similar
-control through overrides but with binary caches for when you just wanted to
-use the defaults.
+were foreign to me and compiling everything from a stage1 tarball on whatever
+shitty hardware I had back then was pretty time consuming. Then around 2018
+I found NixOS as it was pretty popular in the Haskell community, a language I
+had recently fallen in love with. NixOS felt like the perfect OS, it reminded
+me of Gentoo in that it was source based and had similar control through
+overrides but with binary caches for when you just wanted to use the
+defaults.
 
 * Why NixOS is great
 
